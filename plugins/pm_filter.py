@@ -1118,7 +1118,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🎬 Title : {search}\n🌟 8.7/10 | IMDb\n🎭 Genres: Document, Drama, Thriller\n👤 Requested By: {message.from_user.mention}\n\n© By {message.chat.title}</b>"
+        cap = f"<b>🎬 Title:</b> <b>{search}</b>\n<b>📆 Release:</b> <code>N/A</code>\n<b>🌟 Rating:</b> <code>N/A</code>\n<b>🎭 Genres:</b> <code>N/A</code>\n<b>📀 Runtime:</b> <code>N/A</code>\n<b>☀️ Languages:</b> <code>N/A</code>\n<b>🌎 Country of Origin:</b> <code>N/A</code>\n<b>👤 Requested By:</b> <b>{message.from_user.mention}</b>"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
