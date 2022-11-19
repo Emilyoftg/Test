@@ -7,7 +7,7 @@ carbonnow
 ffmpeg
 ffmpeg-python
 ffmpeg-python
-git+https://github.com/subinps/pyrogram@inline-m
+pyrogram==1.2.20
 glitch_this
 googletrans==4.0.0-rc1
 gTTS
